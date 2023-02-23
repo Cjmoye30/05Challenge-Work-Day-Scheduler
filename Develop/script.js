@@ -10,6 +10,7 @@ $(function () {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
 
+  // Creating a variable for the save buttons - might not be necessary but using it now
   var saveButtons = $(".saveBtn");
 
   saveButtons.click(function (e) {
@@ -24,8 +25,21 @@ $(function () {
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
 
+  // I believe I need to use the each function to go over each one of the ID and then use a conditional statement within that
 
+    // Current Hour for calculations to style the divs
+  var currentHour = dayjs().format("HH");
+  console.log(currentHour);
 
+  // Function which pulls all of the class names called "Time-block", and for each of them which is basically a jquery for loop, we are then grabbing their ID
+  $(".time-block").each(function(){
+    console.log($(this).attr('id'));
+    var calendarHour = $(this).attr('id');
+    if (calendarHour === currentHour) {
+      console.log(calendarHour +" is equal to " + currentHour);
+      $(this).addClass("present")
+    }
+  })
 
 
 
@@ -41,7 +55,5 @@ $(function () {
   var currentDate = dayjs().format("dddd DD MMM, YYYY");
   $("#currentDay").text(currentDate);
 
-  // Current Hour for calculations to style the divs
-  var currentHour = dayjs().format("hh");
-  console.log(currentHour);
+
 });
