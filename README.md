@@ -97,3 +97,8 @@ You are required to submit the following for review:
 
 - - -
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+
+
+## Resources Used
+[Get the parent ID of the element](https://stackoverflow.com/questions/10260667/jquery-get-parent-parent-id)
