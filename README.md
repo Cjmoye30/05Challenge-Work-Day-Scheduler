@@ -20,7 +20,7 @@
 
 ## Installation / Live Site
 
-[Github Pages Live Site]()
+[Github Pages Live Site](https://cjmoye30.github.io/05Challenge-Work-Day-Scheduler/)
 
 ## Usage / Screenshot
 
